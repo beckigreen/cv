@@ -91,7 +91,7 @@ contact_info %>%
 
 
 
-Tech Skills {#tech_skills}
+Key Skills {#key_skills}
 --------------------------------------------------------------------------------
 
 ```{r}
