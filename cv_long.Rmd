@@ -123,7 +123,6 @@ Main
 print_text_block(text_blocks, 'intro')
 ```
 
-
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -138,6 +137,13 @@ Research & Industry Experience {data-icon=laptop}
 position_data %>% print_section('research_positions')
 ```
 
+
+Supervision Experience {data-icon=user-friends}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('supervision')
+```
 
 
 Teaching Experience {data-icon=chalkboard-teacher}
@@ -155,6 +161,47 @@ Volunteer Work {data-icon=globe}
 position_data %>% print_section('volunteer_work')
 ```
 
+Oral presentations {data-icon=comments}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('oral_presentations')
+```
+
+Poster only presentations {data-icon=file}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('poster_presentations')
+```
+
+Grants & awards {data-icon=trophy}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('awards')
+```
+
+Leadership roles {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('leadership')
+```
+
+Courses {data-icon=laptop}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('courses')
+```
+
+Membership {data-icon=pen}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('membership')
+```
 
 Publications {data-icon=book}
 --------------------------------------------------------------------------------
@@ -163,12 +210,11 @@ Publications {data-icon=book}
 position_data %>% print_section('academic_articles')
 ```
 
-
-Presentations {data-icon=speaker}
+Book chapters {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('presentations')
+position_data %>% print_section('books')
 ```
 
 
