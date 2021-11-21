@@ -2,8 +2,8 @@
 * {
   /* Override default right margin for sidebar*/
   --pagedjs-margin-right: 0.2in !important;
-  /*--pagedjs-margin-left: 0;
-  --pagedjs-margin-top: 0.2in; */
+  --pagedjs-margin-left: 0.1in;
+  /*--pagedjs-margin-top: 0.2in; */
   --pagedjs-margin-bottom: 0.2in;
 }
 
@@ -16,10 +16,10 @@
   margin: 0 0.5in 0.08in -0.5in;
 }
 
-.main-block {
+main-block {
   margin-top: 0;
   margin-left: -0.1in;
-} */
+} 
 
 
 /* Customize some of the sizing variables */
