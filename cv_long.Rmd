@@ -115,8 +115,7 @@ Resources
 
 Main
 ================================================================================
-
-<span style="color:#358856">Becki Green</span> {#title}
+<span style="color:#358856">Becki Green</span><br> {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -129,6 +128,8 @@ Education {data-icon=graduation-cap data-concise=true}
 ```{r}
 position_data %>% print_section('education')
 ```
+
+<br>
 
 Research & Industry Experience {data-icon=laptop}
 --------------------------------------------------------------------------------

@@ -3,7 +3,7 @@
   /* Override default right margin for sidebar*/
   --pagedjs-margin-right: 0.2in !important;
   --pagedjs-margin-left: 0.1in;
-  /*--pagedjs-margin-top: 0.2in; */
+  --pagedjs-margin-top: 0.3in;
   --pagedjs-margin-bottom: 0.2in;
 }
 
@@ -24,8 +24,8 @@ main-block {
 
 /* Customize some of the sizing variables */
 :root {
-  --sidebar-width: 12rem !important; /* Shrink sidebar width  */
-  --sidebar-horizontal-padding: 0.02in; /* Reduce sidebar padding */
+  --sidebar-width: 13rem !important; /* Shrink sidebar width  */
+  --sidebar-horizontal-padding: 0.03in; /* Reduce sidebar padding */
 }
 
 [data-id="main"]{
