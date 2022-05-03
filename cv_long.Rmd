@@ -110,7 +110,6 @@ Resources
 --------------------------------------------------------------------------------
 *CV made with the R package [**pagedown**](https://github.com/rstudio/pagedown).* 
 *Code available [here](https://github.com/beckigreen/cv).*
-*Last updated on `r Sys.Date()`.*
 
 
 Main
@@ -129,7 +128,6 @@ Education {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-<br>
 
 Research & Industry Experience {data-icon=laptop}
 --------------------------------------------------------------------------------
