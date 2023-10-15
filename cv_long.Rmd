@@ -160,19 +160,20 @@ Volunteer Work {data-icon=globe}
 position_data %>% print_section('volunteer_work')
 ```
 
-Oral presentations {data-icon=comments}
+Presentations {data-icon=comments}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('oral_presentations')
+position_data %>% print_section('presentations')
 ```
 
-Poster only presentations {data-icon=file}
+Public engagement {data-icon=speaker}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('poster_presentations')
+position_data %>% print_section('public_engagement')
 ```
+
 
 Grants & awards {data-icon=trophy}
 --------------------------------------------------------------------------------
@@ -186,20 +187,6 @@ Leadership roles {data-icon=users}
 
 ```{r}
 position_data %>% print_section('leadership')
-```
-
-Courses {data-icon=laptop}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('courses')
-```
-
-Membership {data-icon=pen}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('membership')
 ```
 
 Publications {data-icon=book}
