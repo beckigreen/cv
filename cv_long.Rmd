@@ -153,13 +153,6 @@ position_data %>% print_section('teaching_positions')
 ```
 
 
-Volunteer Work {data-icon=globe}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('volunteer_work')
-```
-
 Presentations {data-icon=comments}
 --------------------------------------------------------------------------------
 
@@ -167,36 +160,42 @@ Presentations {data-icon=comments}
 position_data %>% print_section('presentations')
 ```
 
-Public engagement {data-icon=speaker}
+Public Engagement {data-icon=users}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('public_engagement')
 ```
 
+Volunteer Work {data-icon=globe}
+--------------------------------------------------------------------------------
 
-Grants & awards {data-icon=trophy}
+```{r}
+position_data %>% print_section('volunteer_work')
+```
+
+Grants & Awards {data-icon=trophy}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('awards')
 ```
 
-Leadership roles {data-icon=users}
+Leadership Roles {data-icon=users}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('leadership')
 ```
 
-Publications {data-icon=book}
+Publications & Preprints {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('academic_articles')
 ```
 
-Book chapters {data-icon=book}
+Book Chapters {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
