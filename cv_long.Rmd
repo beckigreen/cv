@@ -137,7 +137,7 @@ position_data %>% print_section('research_positions')
 ```
 
 
-Supervision Experience {data-icon=user-friends}
+Supervision & Management Experience {data-icon=user-friends}
 --------------------------------------------------------------------------------
 
 ```{r}
