@@ -106,6 +106,7 @@ Hobbies
 print_text_block(text_blocks, 'hobbies')
 ```
 
+
 Resources
 --------------------------------------------------------------------------------
 *CV made with the R package [**pagedown**](https://github.com/rstudio/pagedown).* 
