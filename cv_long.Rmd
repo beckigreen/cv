@@ -115,7 +115,7 @@ Resources
 
 Main
 ================================================================================
-<span style="color:#358856">Becki Green, PhD</span><br> {#title}
+<span style="color:#358856">Rebecca (Becki) Green, PhD</span><br> {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -138,22 +138,6 @@ position_data %>% print_section('research_positions')
 ```
 
 
-Supervision & Management Experience {data-icon=user-friends}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('supervision')
-```
-
-
-Teaching Experience {data-icon=chalkboard-teacher}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('teaching_positions')
-```
-
-
 Presentations {data-icon=comments}
 --------------------------------------------------------------------------------
 
@@ -161,33 +145,6 @@ Presentations {data-icon=comments}
 position_data %>% print_section('presentations')
 ```
 
-Public Engagement {data-icon=users}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('public_engagement')
-```
-
-Volunteer Work {data-icon=globe}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('volunteer_work')
-```
-
-Grants & Awards {data-icon=trophy}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('awards')
-```
-
-Leadership Roles {data-icon=users}
---------------------------------------------------------------------------------
-
-```{r}
-position_data %>% print_section('leadership')
-```
 
 Publications & Preprints {data-icon=book}
 --------------------------------------------------------------------------------
