@@ -37,7 +37,7 @@ sheet_is_publicly_readable <- TRUE
 PDF_EXPORT <- FALSE
 
 
-#CV_PDF_LOC <- ""   
+#CV_PDF_LOC <- ""   x
 #CV_HTML_LOC <- ""
 
 # ======================================================================
@@ -96,14 +96,6 @@ Key Skills {#key_skills}
 
 ```{r}
 build_skill_bars(tech_skills, bar_color = "#358856")
-```
-
-
-Hobbies
---------------------------------------------------------------------------------
-
-```{r}
-print_text_block(text_blocks, 'hobbies')
 ```
 
 
