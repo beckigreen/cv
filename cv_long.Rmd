@@ -1,21 +1,32 @@
 ---
 title: "Becki Green's CV"
-author: Becki Green; adapted from Marina Vabistsevits & Nick Strayer
+author: Becki Green
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
     css: ['css/custom_cv.css', 'css/styles.css', 'resume']
     self_contained: true
 ---
+```{css, echo=FALSE}
+
+.pagedjs_page:not(:first-of-type) {
+  --sidebar-width: 0.2rem;
+  --sidebar-background-color: #eaf3ee;
+  --main-width: calc(var(--content-width) - var(--sidebar-width));
+  --decorator-horizontal-margin: 0.2in;
+}
+```
 
 ```{r, include=FALSE}
+# Load libraries 
+if (!require("pacman")) install.packages("pacman")
+pacman::p_load(glue, tidyverse, knitr)
+
 knitr::opts_chunk$set(
   results='asis', 
   echo = FALSE
 )
 
-library(glue)
-library(tidyverse)
 
 # ======================================================================
 # Is data stored in google sheets? If no data will be gather from the csvs/
@@ -24,7 +35,6 @@ using_googlesheets <- TRUE
 
 # Googlesheet URL
 positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/10GWOM-ou86AlEno0mUQSQbt-BU9Lt1XN51tuZ2JKuV4/edit?usp=sharing"
-
 
 # Is this sheet available for anyone to read? If you're using a private sheet
 # set this to false and go to gather_data.R and run the data loading manually
@@ -35,10 +45,6 @@ sheet_is_publicly_readable <- TRUE
 # set this to true to have links turned into footnotes at the end of the
 # document
 PDF_EXPORT <- FALSE
-
-
-#CV_PDF_LOC <- ""   x
-#CV_HTML_LOC <- ""
 
 # ======================================================================
 # Now we source two external scripts. One contains functions for building the
@@ -90,7 +96,6 @@ contact_info %>%
 ```
 
 
-
 Key Skills {#key_skills}
 --------------------------------------------------------------------------------
 
@@ -102,50 +107,53 @@ build_skill_bars(tech_skills, bar_color = "#358856")
 Resources
 --------------------------------------------------------------------------------
 *CV made with the R package [**pagedown**](https://github.com/rstudio/pagedown).* 
-*Code available [here](https://github.com/beckigreen/cv).*
-
+*Code available [here](https://github.com/nstrayer/cv).*
 
 Main
 ================================================================================
-<span style="color:#358856">Rebecca (Becki) Green, PhD</span><br> {#title}
+<span style="color:#358856">Becki Green, PhD</span><br> {#title}
 --------------------------------------------------------------------------------
 
 ```{r}
 print_text_block(text_blocks, 'intro')
 ```
 
-Education {data-icon=graduation-cap data-concise=true}
+<span style="color:#000">Education</span> {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('education')
 ```
 
-
-Research & Industry Experience {data-icon=laptop}
+<span style="color:#000">Employment</span> {data-icon=laptop}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('research_positions')
+position_data %>% print_section('positions')
 ```
 
-
-Presentations {data-icon=comments}
+<span style="color:#000">Presentations</span> {data-icon=comments}
 --------------------------------------------------------------------------------
 
 ```{r}
 position_data %>% print_section('presentations')
 ```
 
-
-Publications & Preprints {data-icon=book}
+<span style="color:#000">Grants & Awards</span> {data-icon=trophy}
 --------------------------------------------------------------------------------
 
 ```{r}
-position_data %>% print_section('academic_articles')
+position_data %>% print_section('grants_awards')
 ```
 
-Book Chapters {data-icon=book}
+<span style="color:#000">Publications & Preprints</span> {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% filter(reports == "N") %>% print_section('articles') 
+```
+
+<span style="color:#000">Book Chapters</span> {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
