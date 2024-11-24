@@ -1,6 +1,8 @@
 ## Academic CV
 This repository contains the code used to make my CV using pagedown, adapted from Nick Strayer and Marina Vabistsevits. Please see the original README below, including a link to a handy blog post, for further guidance.
 
+All information below is from the original creator.
+
 --- 
 ## Original repo README 
 
